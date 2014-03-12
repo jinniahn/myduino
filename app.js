@@ -46,11 +46,13 @@ var led = new arduino.Led({
 // GET /led_on
 app.get('/led_on', function(req, res){
     led.on();
+    res.redirect('/');
 });
 
 // GET /led_off
 app.get('/led_off', function(req, res){
     led.off();
+    res.redirect('/');
 });
 
 http.createServer(app).listen(app.get('port'), function(){
