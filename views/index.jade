@@ -1,0 +1,11 @@
+extends layout
+
+block content
+  div.container
+    h1 LED ON/OFF
+    p you can control LED on Arduion connected to D13
+    a.btn.btn-primary(href="/led_on", style="margin-top: 1px;")#e2-buttonStart
+      |  LED ON
+    | 
+    a.btn.btn-primary(href="/led_off", style="margin-top: 1px;")#e2-buttonStop
+      |  LED OFF
